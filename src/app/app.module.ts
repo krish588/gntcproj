@@ -8,6 +8,8 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { CarouselComponent } from './carousel/carousel.component';
+import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -16,12 +18,14 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     NavbarComponent,
     LandingpageComponent,
     LoginComponent,
-    ProfileComponent
-    
+    ProfileComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    NgbCarouselModule
   ],
   providers: [
     provideAnimationsAsync()
