@@ -3,15 +3,16 @@
     <img class="mb-4" src="#" alt="" width="72" height="72">
     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
     <label for="inputEmail"  class="sr-only">user Name</label>
-    <input  id="inputEmail" class="form-control" placeholder="User Name" required autofocus> 
+    <input  id="inputEmail" class="form-control" placeholder="User Name" required autofocus name="email" [(ngModel)] = "email"> 
     <!--type="email" formControlName="inputEmail" -->
     <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" id="inputPassword" formControlName="inputPassword" class="form-control" placeholder="Password" required>
+    <input type="password"  class="form-control" placeholder="Password" required name="password" [(ngModel)] = "password">
     <div class="checkbox mb-3">
       <label>
         <input type="checkbox" value="remember-me"> Remember me </label>
     </div>
-    <button routerLink="/profile" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <button  class="btn btn-lg btn-primary btn-block" (click)= "login()" type="submit">Sign in</button>
+    <!-- routerLink="/profile" -->
     <!-- <button routerLink="/register" class="btn btn-lg btn-primary btn-block" type="submit">Create New Account</button> -->
 </form>
 
