@@ -7,9 +7,9 @@ import { MvactComponent } from './mvact/mvact.component';
 
 
 const routes: Routes = [
-  {path:'landing',component:LandingpageComponent},
-  {path:'login', component:LoginComponent},
-  {path:'profile',component:ProfileComponent},
+  // {path:'',component:LandingpageComponent},
+  // {path:'login', component:LoginComponent},
+  // {path:'profile',component:ProfileComponent},
   {path:'',component:MvactComponent}
 
 ];
