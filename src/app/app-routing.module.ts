@@ -3,13 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
-import { CarouselComponent } from './carousel/carousel.component';
+import { MvactComponent } from './mvact/mvact.component';
+
 
 const routes: Routes = [
-  {path:'',component:LandingpageComponent},
+  {path:'landing',component:LandingpageComponent},
   {path:'login', component:LoginComponent},
   {path:'profile',component:ProfileComponent},
-  {path:'x',component:CarouselComponent}
+  {path:'',component:MvactComponent}
 
 ];
 

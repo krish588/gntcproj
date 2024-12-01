@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CarouselComponent } from './carousel.component';
+import { MvactComponent } from './mvact.component';
 
-describe('CarouselComponent', () => {
-  let component: CarouselComponent;
-  let fixture: ComponentFixture<CarouselComponent>;
+describe('MvactComponent', () => {
+  let component: MvactComponent;
+  let fixture: ComponentFixture<MvactComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [CarouselComponent]
+      declarations: [MvactComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CarouselComponent);
+    fixture = TestBed.createComponent(MvactComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
